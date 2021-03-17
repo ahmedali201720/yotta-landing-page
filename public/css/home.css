@@ -1,7 +1,7 @@
 /* Intro section styles */
 
 .intro-section {
-    background-image: linear-gradient(to right bottom, #205f66c0, #205f66c0), url('../../assets/images/result-1.jpeg');
+    background-image: linear-gradient(to right bottom, #68686879, #686868), url('../../assets/images/result-1.jpeg');
     perspective: 1000px;
     perspective-origin: 50% 50%;
     animation: animateBackgroundImage 100s linear infinite;
@@ -13,6 +13,8 @@
     height: auto;
     -webkit-animation: floatUpDown 1.5s infinite alternate;
     animation: floatUpDown 1.5s infinite alternate;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
 }
 
 .intro-section .intro-section-carousel p {
@@ -67,7 +69,7 @@
 .about-section {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    background-image: linear-gradient(to right bottom, #a8a8a58c, #9e9e988c), url('../../assets/images/sexual-problem2.jpg');
+    background-image: linear-gradient(to right bottom, #797973ab, #888881a9), url('../../assets/images/donjouansolution.png');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -78,6 +80,8 @@
     height: auto;
     -webkit-animation: yRotate 4s infinite alternate;
     animation: yRotate 4s infinite alternate;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #fff;
 }
 
 .about-section .section-header {
@@ -108,7 +112,7 @@
 /* Product components */
 
 .product-components {
-    background-image: linear-gradient(to right bottom, #205f66c0, #205f66c0), url('../../assets/images/product.png');
+    background-image: linear-gradient(to right bottom, #205f66c0, #205f66c0), url('../../assets/images/garrab-benafsak.jpeg');
     perspective: 1000px;
     perspective-origin: 50% 50%;
     animation: animateBackgroundImage 100s linear infinite;
@@ -245,9 +249,10 @@
 }
 
 .pricing-section .pricing-item img {
-    height: auto;
-    max-width: 90px;
-    max-height: 90px;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 2px solid #fff;
     -webkit-animation: yRotate 5s infinite ease-in-out;
     animation: yRotate 10s infinite ease-in-out;
 }

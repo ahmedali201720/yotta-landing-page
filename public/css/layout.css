@@ -80,8 +80,9 @@
 
 .header-logo {
     width: 70px;
-    height: auto;
+    height: 70px;
     transition: transform 1.5s;
+    border-radius: 50%;
 }
 
 .header-logo:hover {
@@ -487,7 +488,7 @@
 /* ********************************************************************************************************* */
 
 #footer {
-    background-image: linear-gradient(to right bottom, #00515ac2, #124e55b4), url('../../assets/images/solution-1.jpg');
+    background-image: linear-gradient(to right bottom, #00515ac2, #124e55b4), url('../../assets/images/takheertabea.png');
     perspective: 1000px;
     perspective-origin: 50% 50%;
     animation: animateBackgroundImage 300s linear infinite;
@@ -584,8 +585,10 @@
 }
 
 .footer-logo-container a img {
-    width: 190px;
+    width: 150px;
     height: auto;
+    border-radius: 50%;
+    border: 2px solid #fff;
     transition: transform 1.5s;
 }
 
