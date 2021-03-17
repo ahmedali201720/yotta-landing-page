@@ -1,7 +1,7 @@
 /* Intro section styles */
 
 .intro-section {
-    background-image: linear-gradient(to right bottom, #00000088, #00000088), url('../../assets/images/takheertabea.png');
+    background-image: linear-gradient(to right bottom, #00000088, #00000088), url('../../assets/images/1200-1200/27.jpg');
     perspective: 1000px;
     perspective-origin: 50% 50%;
     animation: animateBackgroundImage 100s linear infinite;
@@ -9,7 +9,7 @@
 
 .intro-section :is(.img-wrapper img) {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
     -webkit-animation: floatUpDown 1.5s infinite alternate;
     animation: floatUpDown 1.5s infinite alternate;
