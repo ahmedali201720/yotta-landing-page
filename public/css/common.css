@@ -1,0 +1,107 @@
+:root {
+    --mainOrange: #DF1419;
+    --mainGrey: #636466;
+    --secondaryGrey: #A7A9AC;
+    --greenColor: #71a033;
+    --blueColor: #00515A;
+    --whiteColor: #F0F0EF;
+}
+
+/* Set the direction right to left */
+
+* {
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+}
+
+.space-sm {
+    padding: 0 0.225rem;
+}
+
+.cursor-pointer:hover {
+    cursor: pointer;
+}
+
+.dynamic-text-align:lang(ar) {
+    text-align: right;
+}
+
+.dynamic-text-align:lang(en) {
+    text-align: left;
+}
+
+.dynamic-text-align-reverse:lang(ar) {
+    text-align: left;
+}
+
+.dynamic-text-align-reverse:lang(en) {
+    text-align: right;
+}
+
+.text-main {
+    color: var(--mainOrange);
+}
+
+.text-grey {
+    color: #636466;
+}
+
+.text-smoke {
+    color: whitesmoke;
+}
+
+.bg-main {
+    background-color: var(--blueColor);
+}
+
+.big-icon {
+    font-size: 50px !important;
+}
+
+.text-red-light {
+    color: #fac3c4 !important;
+}
+
+.fade-in-class {
+    -webkit-animation: fadeIn 1s ease-in;
+    animation: fadeIn 1s ease-in;
+}
+
+/* ************************************************************************************************************** */
+
+/* Forex Ticker Styles */
+
+#news-ticker-container {
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.news-ticker-item .item-header {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.325rem 0;
+}
+
+.news-ticker-item a:hover .item-header {
+    color: rgb(231, 207, 207) !important;
+}
+
+/* ********************************************************************************** */
+
+#news-ticker-container #newsTicker {
+    background-image: linear-gradient(to right bottom, #034168c7, #034168cc), url('../../assets/images/background2.jpg');
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animateBackgroundImage 100s linear infinite;
+}
+
+.collapse-header {
+    background-color: transparent;
+}

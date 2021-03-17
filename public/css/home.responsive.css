@@ -1,0 +1,27 @@
+@media only screen and (max-width: 576px) {
+    .intro-section .major-text {
+        font-size: 24px !important;
+    }
+    .intro-section .minor-text {
+        margin-top: 10px;
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 414px) {}
+
+@media only screen and (max-width: 320px) {}
+
+@media only screen and (max-width: 280px) {}
+
+/* ********************************************************************************************************* */
+
+@media only screen and (min-width: 576px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (min-width: 1300px) {}
