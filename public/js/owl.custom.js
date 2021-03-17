@@ -45,3 +45,22 @@ $(document).ready(function () {
     });
 
 });
+
+$(".intro-img-carousel").owlCarousel({
+    margin: 0,
+    center: true,
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    autoplay: true,
+    autoHeight: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    nav: false,
+    rtl: true,
+    responsive: {
+        0: {
+            items: 1,
+        }
+    }
+});
