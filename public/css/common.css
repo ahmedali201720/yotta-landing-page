@@ -1,5 +1,5 @@
 :root {
-    --mainOrange: #DF1419;
+    --mainOrange: rgb(231, 13, 158);
     --mainGrey: #636466;
     --secondaryGrey: #A7A9AC;
     --greenColor: #71a033;
@@ -44,7 +44,7 @@ body {
 }
 
 .text-main {
-    color: var(--mainOrange);
+    color: rgb(231, 13, 158);
 }
 
 .text-grey {

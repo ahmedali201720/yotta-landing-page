@@ -54,7 +54,7 @@ $(".intro-img-carousel").owlCarousel({
     touchDrag: true,
     autoplay: true,
     autoHeight: true,
-    autoplayTimeout: 1000,
+    autoplayTimeout: 2000,
     autoplayHoverPause: true,
     nav: false,
     rtl: true,

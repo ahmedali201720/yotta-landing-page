@@ -59,6 +59,8 @@
     transition: all 0.4s;
     -webkit-animation: buttonUpDownFloat 1s infinite alternate;
     animation: buttonUpDownFloat 1s infinite alternate;
+    border: none;
+    outline: none !important;
 }
 
 .theme-button:hover {
@@ -91,14 +93,14 @@
 .about-section {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    background-image: linear-gradient(to right bottom, #797973ab, #888881a9), url('../../assets/images/donjouansolution.png');
+    background-image: linear-gradient(to right bottom, #797973ab, #888881a9), url('../../assets/images/strong1.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
 
 .about-section :is(.img-wrapper img) {
     width: 100%;
-    max-width: 300px;
+    max-width: 500px;
     height: auto;
     -webkit-animation: yRotate 4s infinite alternate;
     animation: yRotate 4s infinite alternate;
@@ -180,10 +182,11 @@
 .features-section {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    background-image: linear-gradient(to right bottom, #e0e0da8c, #e0e0da8c), url('../../assets/images/1200-1200/45.jpg');
+    background-image: linear-gradient(to right bottom, #e0e0da8c, #e0e0da8c), url('../../assets/images/strong1.jpg');
     perspective: 1000px;
     perspective-origin: 50% 50%;
     animation: animateBackgroundImage 100s linear infinite;
+    background-size: cover;
 }
 
 .features-section .header {
@@ -304,9 +307,10 @@
 }
 
 .pricing-section .pricing-item {
-    background-color: #00515aa8;
+    background-color: rgb(212, 194, 206);
     border-radius: 10px;
     height: 100%;
+    opacity: 0.8;
 }
 
 .pricing-section .pricing-item:hover {
@@ -328,7 +332,7 @@
 
 .pricing-section .pricing-item .price-wrapper .price-text .current-price {
     font-size: 30px;
-    color: #fff;
+    color: rgb(8, 78, 124);
 }
 
 .pricing-section .pricing-item .body {
@@ -339,7 +343,7 @@
 
 .pricing-section .pricing-item .body .wrapper {
     position: relative;
-    background-color: #ffffffc9;
+    background-color: #fff;
     font-weight: 600;
     padding: 0.125rem 0;
     margin-bottom: 0.325rem;
@@ -365,16 +369,16 @@
     width: 100%;
     padding: 0.625rem 0;
     border-radius: 10px;
-    background-color: rgb(241, 236, 236);
-    color: var(--blueColor);
+    background-color: red;
+    color: #fff;
     font-weight: 700;
-    opacity: 0.7;
+    opacity: 0.9;
     transition: all 0.4s;
 }
 
 .select-plan-button button:hover {
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.658);
+    background-color: rgb(252, 38, 38);
 }
 
 .select-plan-button button::after {
@@ -384,7 +388,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.658);
+    background-color: red;
     border-radius: 10px;
     z-index: -1;
     transition: all 0.4s;
