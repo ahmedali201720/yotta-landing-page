@@ -1,10 +1,11 @@
 :root {
-    --mainOrange: rgb(231, 13, 158);
+    --mainOrange: #009193;
     --mainGrey: #636466;
     --secondaryGrey: #A7A9AC;
     --greenColor: #71a033;
-    --blueColor: #00515A;
+    --blueColor: #065f95;
     --whiteColor: #F0F0EF;
+    --mainColor: #009193;
 }
 
 /* Set the direction right to left */
