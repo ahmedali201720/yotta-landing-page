@@ -41,30 +41,6 @@
     cursor: pointer;
 }
 
-/* Fixed Contact Toggler */
-
-.fixed-contact-toggler {
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-}
-
-.fixed-contact-toggler button {
-    outline: none;
-    border: none;
-    width: 60px;
-    height: 60px;
-    font-size: 20px;
-    border-radius: 50%;
-    background-color: var(--mainColor);
-    color: #fff;
-    z-index: 500000;
-}
-
-.fixed-contact-toggler button:hover {
-    cursor: pointer;
-}
-
 /* Intro section styles */
 
 .intro-section {
@@ -78,6 +54,7 @@
     background-color: var(--mainColor);
     padding: 0.825rem;
     border-radius: 50px;
+    border: 2px solid #fff;
 }
 
 .intro-section .video-container {
@@ -109,6 +86,7 @@
     box-shadow: 0 0 5px var(--mainColor);
     z-index: 20000;
     width: 330px;
+    overflow-y: auto;
 }
 
 .contact-form .header {

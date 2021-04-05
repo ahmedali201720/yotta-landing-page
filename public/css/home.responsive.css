@@ -25,6 +25,9 @@
     .fixed-contact-header {
         font-size: 14px !important;
     }
+    .contact-form {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 414px) {
@@ -88,12 +91,17 @@
 
 /* ********************************************************************************************************* */
 
-@media only screen and (min-width: 576px) {}
+@media only screen and (min-width: 576px) {
+    .contact-form {
+        display: none;
+    }
+}
 
 @media only screen and (min-width: 768px) {}
 
 @media only screen and (min-width: 992px) {
     .contact-form {
+        display: block;
         left: 5%;
         width: 280px;
     }
