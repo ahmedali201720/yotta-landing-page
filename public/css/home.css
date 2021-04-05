@@ -436,34 +436,35 @@
 
 /* Modal Styles */
 
-#requestProductForm {
+#popUpModal {
+    background-image: url(../../assets/images/Health-care.jpg);
     border-radius: 10px;
     z-index: 100000;
 }
 
-#requestProductForm .modal-header {
+#popUpModal .modal-header {
     background-color: var(--blueColor);
 }
 
-#requestProductForm .modal-title {
+#popUpModal .modal-title {
     font-weight: 700;
     color: #fff;
 }
 
-#requestProductForm .modal-content {
+#popUpModal .modal-content {
     border-radius: 10px;
 }
 
-#requestProductForm .modal-content .close {
+#popUpModal .modal-content .close {
     margin: 0;
     color: rgb(255, 255, 255) !important;
 }
 
-#requestProductForm .modal-content .close button {
+#popUpModal .modal-content .close button {
     outline: none !important;
 }
 
-#requestProductForm form input {
+#popUpModal form input {
     outline: none;
 }
 
