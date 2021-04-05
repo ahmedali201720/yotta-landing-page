@@ -41,6 +41,30 @@
     cursor: pointer;
 }
 
+/* Fixed Contact Toggler */
+
+.fixed-contact-toggler {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+}
+
+.fixed-contact-toggler button {
+    outline: none;
+    border: none;
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    color: #fff;
+    z-index: 500000;
+}
+
+.fixed-contact-toggler button:hover {
+    cursor: pointer;
+}
+
 /* Intro section styles */
 
 .intro-section {
@@ -48,6 +72,12 @@
     background-image: linear-gradient(to right bottom, #00000088, #00000088), url('../../assets/images/covermodal.jpg.crdownload');
     background-size: cover;
     border-bottom: 1px solid #fff;
+}
+
+.intro-section .head-label {
+    background-color: var(--mainColor);
+    padding: 0.825rem;
+    border-radius: 50px;
 }
 
 .intro-section .video-container {
@@ -276,6 +306,7 @@
     border-radius: 7px;
     perspective: 150rem;
     -moz-perspective: 150rem;
+    height: 252px;
 }
 
 .card-side {
@@ -283,13 +314,16 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
-    transition: all 0.6s;
+    height: 252px;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
 }
 
 .card-side-back {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
+    background-color: #ffffff;
+    border-radius: 7px;
 }
 
 .course-card:hover {
@@ -321,9 +355,13 @@
 
 .course-card .image .lecturer {
     position: absolute;
+    display: block;
     bottom: 7%;
     left: 0;
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     background-color: var(--mainColor);
     padding: 0.225rem 0.825rem;
     color: #ffffff;
@@ -377,6 +415,52 @@
 .course-card .body .current-price {
     color: var(--blueColor);
     font-weight: 700;
+}
+
+.course-card .back-body {
+    background-image: linear-gradient(to right bottom, #f5eeeed7, #e1f5fad8), url('../../assets/images/covermodal.jpg.crdownload');
+    background-size: cover;
+    border-radius: 7px;
+    height: 252px;
+}
+
+.card-side-back .back-title a {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    height: 48px;
+    color: var(--mainColor);
+    overflow: hidden;
+}
+
+.card-side-back .back-topic {
+    font-size: 14px;
+    margin-bottom: 0.825rem;
+}
+
+.card-side-back .back-topic a {
+    font-size: 14px;
+    margin-bottom: 0.825rem;
+    color: var(--mainColor);
+    font-weight: 700;
+}
+
+.card-side-back .back-info {
+    font-size: 14px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.card-side-back .back-info i {
+    color: var(--mainColor);
+}
+
+.card-side-back .back-desc {
+    font-size: 14px;
+    line-height: 16px;
+    height: 80px;
+    overflow: hidden;
 }
 
 /* Product components */

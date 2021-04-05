@@ -8,26 +8,33 @@ $(document).ready(function () {
         autoplay: true,
         autoplayTimeout: 4000,
         autoplayHoverPause: true,
-        nav: false,
+        nav: true,
+        navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
         rtl: true,
         responsive: {
             0: {
                 items: 1
             },
-            400: {
-                items: 1.2
+            350: {
+                items: 1.25
+            },
+            370: {
+                items: 1.4
+            },
+            414: {
+                items: 1.75
             },
             576: {
-                items: 1.8
+                items: 2.2
             },
             768: {
-                items: 2.5
+                items: 3
             },
             992: {
-                items: 2.75
+                items: 2.5
             },
             1200: {
-                items: 3.25
+                items: 3
             }
         }
     });
