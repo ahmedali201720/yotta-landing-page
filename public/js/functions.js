@@ -88,3 +88,7 @@ function animateOnView(animatableElment, offset) {
 function openModal() {
     $("#popUpModal").modal('toggle');
 }
+
+function closeCTA() {
+    $("#fixedHeader").fadeOut(700);
+}

@@ -26,145 +26,85 @@
 
 <body>
 
+    <header id="fixedHeader" class="fixed-contact-header px-3 py-1 bg-danger text-white">
+        <div class="wrapper d-flex justify-content-center align-items-sm-center align-items-start">
+            <div class="icon mx-2">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <p class="mb-0 text-center">
+                سهلناها عليك ، تواصل معنا الان عن طريق الواتس اب بالضغط <a href="https://wa.me/201117698650"
+                    target="_blank">هنا</a>
+            </p>
+        </div>
+        <div class="close d-md-block d-none">
+            <button id="closeCta" class="close-cta">
+                <i class="fa fa-times"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="contact-form d-lg-block d-none dynamic-text-align">
+
+        <div class="header p-3">
+            <p class="mb-0">تواصل معنا</p>
+        </div>
+
+        <form class="dynamic-text-align px-sm-4 px-3">
+
+            <div class="modal-body pt-4">
+
+                <div class="form-group">
+                    <input type="email" class="form-control" id="shipEmail" aria-describedby="emailHelp"
+                        placeholder="الإسم">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="shipEmail" aria-describedby="emailHelp"
+                        placeholder="الايميل">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="shipPhone" placeholder="رقم الهاتف">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="shipAddress" placeholder="موضوع الرسالة">
+                </div>
+                <div class="form-group">
+                    <textarea id="msgDetails" name="details" class="w-100 px-2" rows="3" placeholder="تفاصيل الرسالة"
+                        style="border-top: 1px solid grey;"></textarea>
+                    </textarea>
+                </div>
+
+            </div>
+
+            <div class="modal-footer select-plan-button border-top-0 pt-0 pb-4 mb-3 d-flex justify-content-center">
+                <button type="submit" class="btn btn-success">ارســـــال</button>
+            </div>
+
+        </form>
+
+    </div>
+
     <section class="intro-section px-xl-5 px-lg-4 px-3 py-sm-3 py-5" id="introSection">
 
-        <div class="container-fluid py-sm-5 py-2">
+        <div class="container-fluid py-4">
 
-            <div class="row py-xl-5 py-md-4">
+            <div class="row">
 
-                <div class="col-lg-7 text-center mb-md-0 mb-3">
+                <div class="col-lg-8 text-center mb-md-0 mb-3">
 
-                    <div class="intro-section-carousel owl-carousel">
+                    <div class="video-container">
 
-                        <div class="header-label text-center mb-0">
-                            <div class="img-container w-100 text-center mb-3">
-                                <img src="../assets/images/500-500/37.jpg" alt="drnoor">
-                            </div>
-                            <p class="mb-1 major-text">دكتور نور لعلاج تساقط الشعر</p>
-                            <p class="mb-1 minor-text text-red-light">الحل السحرى للحفاظ على الشعر</p>
-                        </div>
-
-                        <div class="header-label text-center mb-0">
-                            <div class="img-container w-100 text-center mb-3">
-                                <img src="../assets/images/500-500/20.jpg" alt="drnoor">
-                            </div>
-                            <p class="mb-1 major-text">حافظ على جمال مظهرك</p>
-                            <p class="mb-1 minor-text text-red-light">
-                                احمى نفسك من تساقط شعرك
-                            </p>
-                        </div>
-
-                        <div class="header-label text-center mb-0">
-                            <div class="img-container w-100 text-center mb-3">
-                                <img src="../assets/images/500-500/40.jpg" alt="drnoor">
-                            </div>
-                            <p class="mb-1 major-text">لازم نطبطب على شعرنا</p>
-                            <p class="mb-1 minor-text text-red-light">خلى بالك من شعرك من التساقط</p>
-                        </div>
-
-                    </div>
-
-                    <div class="w-100 mt-5 d-flex justify-content-center align-items-center">
-                        <button class="theme-button order-button" id="orderButton" type="button" data-toggle="modal"
-                            data-target="#popUpModal">أطلب الآن
-                        </button>
-                    </div>
-
-                </div>
-
-                <div class="col-lg-5 mb-3">
-
-                    <div class="intro-img-carousel owl-carousel py-2">
-
-                        <div class="img-wrapper d-flex justify-content-center">
-                            <img src="../assets/images/1200-1200/24.jpg" alt="product">
-                        </div>
-
-                        <div class="img-wrapper d-flex justify-content-center">
-                            <img src="../assets/images/1200-1200/32.jpg" alt="product">
-                        </div>
-
-                        <div class="img-wrapper d-flex justify-content-center">
-                            <img src="../assets/images/1200-1200/47.jpg" alt="product">
-                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/RJ2kwpzX8so"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
 
                     </div>
 
                 </div>
 
-            </div>
+                <div class="col-lg-4 mb-3">
 
-        </div>
-
-    </section>
-
-    <section class="features-section px-xl-5 px-lg-4 px-3 py-5" id="featuresSection">
-
-        <div class="container-fluid">
-
-            <div class="wrapper text-center">
-                <p class="header mb-xl-5 mb-4">4 أسباب لطلب المنتج</p>
-            </div>
-
-            <div class="usage-items-carousel owl-carousel mt-5">
-
-                <div class="feature-item d-flex flex-column align-items-center align-items-center">
-
-                    <div class="icon">
-                        <i class="fa fa-shield-check"></i>
-                    </div>
-
-                    <div class="desc mt-3">
-                        <p class="mb-0">
-                            الأمان - عدم وجود آثار جانبية على الإطلاق
-                        </p>
-                    </div>
-
-
-                </div>
-
-                <div class="feature-item d-flex flex-column align-items-center align-items-center">
-
-                    <div class="icon">
-                        <i class="fa fa-shopping-cart"></i>
-                    </div>
-
-                    <div class="desc mt-3">
-                        <p class="mb-0">
-                            لا يباع في المتاجر العامة
-                        </p>
-                    </div>
-
-
-                </div>
-
-                <div class="feature-item d-flex flex-column align-items-center align-items-center">
-
-                    <div class="icon">
-                        <i class="fa fa-globe"></i>
-                    </div>
-
-                    <div class="desc mt-3">
-                        <p class="mb-0">
-                            فعالية مثبتة - يستخدمه ملايين المستهلكين في جميع أنحاء العالم
-                        </p>
-                    </div>
-
-
-                </div>
-
-                <div class="feature-item d-flex flex-column align-items-center align-items-center">
-
-                    <div class="icon">
-                        <i class="fa fa-globe"></i>
-                    </div>
-
-                    <div class="desc mt-3">
-                        <p class="mb-0">
-                            يوصى به
-                            جميع أخصائيى الجلدية و الشعر
-                        </p>
-                    </div>
 
 
                 </div>
@@ -175,181 +115,45 @@
 
     </section>
 
-    <section class="pricing-section px-xl-5 px-lg-4 py-5" id="pricingSection">
+    <section class="about-section px-xl-5 px-lg-4 px-3 py-5" id="aboutSection">
 
         <div class="container-fluid">
 
-            <div class="wrapper text-center">
-                <p class="header mb-xl-5 mb-4">خطط الشراء</p>
-            </div>
+            <div class="row fade-section">
 
-            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-8 dynamic-text-align">
 
-                <div class="col-xl-3 col-md-4 col-sm-6 mb-3">
+                    <div class="wrapper">
 
-                    <div class="pricing-item text-center px-4 py-4">
+                        <h4 class="section-header text-white font-weight-bold">
+                            Yotta Medical School
+                        </h4>
 
-                        <div class="price-wrapper mt-5 mb-4">
-                            <p class="price-text font-weight-bold mb-0">
-                                <span class="current-price">395
-                                    <small>ج.م</small>
-                                </span>
-                                <span class="old-price">
-                                    <span class="wrapper text-dark">
-                                        <span>490 ج.م</span>
-                                    </span>
-                                </span>
-                            </p>
-                        </div>
+                        <div class="mt-4 px-2">
 
-                        <div class="discount-badge">
-                            خصم 20%
-                        </div>
-
-                        <div class="product-name">
-                            <p class="mb-0 p-2 mb-4">مجموعة العناية بالشعر</p>
-                        </div>
-
-                        <div class="body mb-5">
-                            <div class="wrapper quantity">
-                                <i class="fa fa-check-circle text-info"></i>
-                                <p class="mb-1">
-                                    <span class="text-danger font-weight-bold">x4</span>
-                                    <span class="text-info">عبوة</span>
-                                </p>
-                            </div>
-                            <div class="wrapper insurance">
-                                <i class="fa fa-check-circle text-info"></i>
-                                <p class="mb-1">
-                                    <span class="text-info">ضمان حقيقى</span>
-                                </p>
-                            </div>
-                            <div class="wrapper insurance">
-                                <i class="fa fa-check-circle text-info"></i>
-                                <p class="mb-1">
-                                    <span class="text text-info">شحن مجانى</span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="select-plan-button mt-4 mb-3">
-                            <button id="selectPlanButton" type="button" data-toggle="modal"
-                                data-target="#popUpModal">اطلب
-                                الآن</button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-xl-3 col-md-4 col-sm-6 mb-3">
-
-                    <div class="pricing-item text-center px-4 py-4">
-
-                        <div class="price-wrapper mt-5 mb-4">
-                            <p class="price-text font-weight-bold mb-0">
-                                <span class="current-price">485
-                                    <small>ج.م</small>
-                                </span>
-                                <span class="old-price">
-                                    <span class="wrapper text-dark">
-                                        <span>600 ج.م</span>
-                                    </span>
-                                </span>
-                            </p>
-                        </div>
-
-                        <div class="discount-badge">
-                            خصم 20%
-                        </div>
-
-                        <div class="product-name">
-                            <p class="mb-0 p-2 mb-4">مجموعة العناية بالبشرة</p>
-                        </div>
-
-                        <div class="body mb-5">
-                            <div class="wrapper quantity">
-                                <i class="fa fa-check-circle text-info"></i>
-                                <p class="mb-1">
-                                    <span class="text-danger font-weight-bold">x5</span>
-                                    <span class="text-info">عبوة</span>
-                                </p>
-                            </div>
-                            <div class="wrapper insurance">
-                                <i class="fa fa-check-circle text-info"></i>
-                                <p class="mb-1">
-                                    <span class="text-info">ضمان حقيقى</span>
-                                </p>
-                            </div>
-                            <div class="wrapper insurance">
-                                <i class="fa fa-check-circle text-info"></i>
-                                <p class="mb-1">
-                                    <span class="text text-info">شحن مجانى</span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="select-plan-button mt-4 mb-3">
-                            <button id="selectPlanButton" type="button" data-toggle="modal"
-                                data-target="#popUpModal">اطلب
-                                الآن</button>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="col-xl-3 col-md-4 col-sm-6 mb-3">
-
-                    <div class="pricing-item text-center px-4 py-4">
-
-                        <div class="price-wrapper mt-5 mb-4">
-                            <p class="price-text font-weight-bold mb-0">
-                                <span class="current-price">435
-                                    <small>ج.م</small>
-                                </span>
-                                <span class="old-price">
-                                    <span class="wrapper text-dark">
-                                        <span>555 جنيه</span>
-                                    </span>
-                                </span>
-                            </p>
-                        </div>
-
-                        <div class="discount-badge">
-                            خصم 20%
-                        </div>
-
-                        <div class="product-name">
-                            <p class="mb-0 p-2 mb-4">مجموعة تفتيح البشرة</p>
-                        </div>
-
-                        <div class="body mb-5">
-                            <div class="wrapper quantity">
-                                <i class="fa fa-check-circle text-info"></i>
-                                <p class="mb-1">
-                                    <span class="text-danger font-weight-bold">x4</span>
-                                    <span class="text-info">عبوة</span>
-                                </p>
-                            </div>
-                            <div class="wrapper insurance">
-                                <i class="fa fa-check-circle text-info"></i>
-                                <p class="mb-1">
-                                    <span class="text-info">ضمان حقيقى</span>
-                                </p>
-                            </div>
-                            <div class="wrapper insurance">
-                                <i class="fa fa-check-circle text-info"></i>
-                                <p class="mb-1">
-                                    <span class="text text-info">شحن مجانى</span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="select-plan-button mt-4 mb-3">
-                            <button id="selectPlanButton" type="button" data-toggle="modal"
-                                data-target="#popUpModal">اطلب
-                                الآن</button>
+                            <ul class="px-0">
+                                <li class="feature-text-item">
+                                    لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                                </li>
+                                <li class="feature-text-item">
+                                    أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
+                                    كيو أوفيسيا ديسيريونتموليت انيم أيدي ايست لابوريوم.
+                                </li>
+                                <li class="feature-text-item">
+                                    سيت يتبيرسبايكياتيس يوندي أومنيس أستي ناتيس أيررور سيت فوليبتاتيم أكيسأنتييوم
+                                    دولاريمكيو لايودانتيوم,توتام ريم أبيرأم,أيكيو أبسا كيواي أب أللو أنفينتوري فيرأتاتيس
+                                    ايت
+                                    كياسي أرشيتيكتو بيتاي فيتاي ديكاتا سيونت أكسبليكابو.</li>
+                                <li class="feature-text-item">
+                                    يساعد على تقليل الهيشان، وسهوله تسريح الشعر، وتحسن مظهره.
+                                </li>
+                                <li class="feature-text-item">
+                                    لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                                </li>
+                                <li class="feature-text-item">
+                                    لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                                </li>
+                            </ul>
                         </div>
 
                     </div>
@@ -428,252 +232,6 @@
         </div>
 
     </div>
-
-    <section class="about-section px-xl-5 px-lg-4 px-3 py-5" id="aboutSection">
-
-        <div class="container-fluid">
-
-            <div class="row fade-section">
-
-                <div class="col-lg-6 mb-lg-0 mb-2 d-flex justify-content-center align-items-center">
-
-                    <div class="img-wrapper d-flex justify-content-center">
-                        <img src="../assets/images/drop1.jpg" alt="product">
-                    </div>
-
-                </div>
-
-                <div class="col-lg-6 dynamic-text-align">
-
-                    <div class="wrapper">
-
-                        <h4 class="section-header text-white font-weight-bold">مع <span class="text-dark">دكتور
-                                نور</span> ، وداعا لتساقط الشعر
-                        </h4>
-
-                        <div class="mt-4 px-2">
-
-                            <ul class="px-0">
-                                <li class="feature-text-item">
-                                    منتجات طبيعية 100 %
-                                </li>
-                                <li class="feature-text-item">
-                                    كورس العناية بالشعر يقضي على التساقط من اول استخدام
-                                </li>
-                                <li class="feature-text-item">
-                                    يساعد على انبات شعر جديد في اقل وقت ممكن.. خلال اسبوعين فقط من استخدامه. </li>
-                                <li class="feature-text-item">
-                                    يساعد على تقليل الهيشان، وسهوله تسريح الشعر، وتحسن مظهره.
-                                </li>
-                                <li class="feature-text-item">
-                                    منتجاتنا الاولى في مصر التي تحتوي على مواد طبيعيه ١٠٠٪؜ </li>
-                                <li class="feature-text-item">
-                                    منتجاتنا بدون اي مواد كيميائيه ضاره مثل السلفات، بارابين، سيليكون، كبريت... <a
-                                        href="#pricingSection" class="text-grey font-weight-bold">
-                                        اقتنيها الآن .
-                                    </a> </li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="product-usage px-xl-5 px-lg-4 px-3 py-5" id="howToUse">
-
-        <div class="container-fluid">
-
-            <div class="wrapper text-center">
-                <p class="header mb-xl-5 mb-4">طريقة الإستخدام</p>
-                <p class="sub-header mb-0">
-                    <i class="fa fa-quote-right mx-1"></i>
-                    تعرف على طريقة الإستخدام فى الخطوات الآتية
-                    <i class="fa fa-quote-left mx-1"></i>
-                </p>
-            </div>
-
-            <div class="usage-items-carousel owl-carousel mt-5">
-
-                <div class="usage-item d-flex flex-column align-items-center align-items-center">
-
-                    <div class="number">
-                        1
-                    </div>
-
-                    <div class="desc mt-3">
-                        <p class="mb-0">
-                            تقلب العبوة جيدا قبل الاستخدام
-                        </p>
-                    </div>
-
-
-                </div>
-
-                <div class="usage-item d-flex flex-column align-items-center align-items-center">
-
-                    <div class="number">
-                        2
-                    </div>
-
-                    <div class="desc mt-3">
-                        <p class="mb-0">
-                            ادهن شعرك بالمنتج حتى يتشبع به
-                        </p>
-                    </div>
-
-
-                </div>
-
-                <div class="usage-item d-flex flex-column align-items-center align-items-center">
-
-                    <div class="number">
-                        3
-                    </div>
-
-                    <div class="desc mt-3">
-                        <p class="mb-0">
-                            قومي بعمل مساج لشعرك حتى يمتص المنتج
-                        </p>
-                    </div>
-
-
-                </div>
-
-                <div class="usage-item d-flex flex-column align-items-center align-items-center">
-
-                    <div class="number">
-                        4
-                    </div>
-
-                    <div class="desc mt-3">
-                        <p class="mb-0">
-                            بعد ساعتين أو أكثر قم بغسل شعرك بالماء
-                        </p>
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Customer feedback section -->
-
-    <section id="feedback" class="px-2 py-5">
-
-        <div class="container-fluid">
-
-            <div class="row pt-2">
-                <div class="col-12 d-flex justify-content-center align-items-center">
-                    <h3 class="feedback-header px-5 py-3 text-center">
-                        <span>نتائج حقيقية</span>
-                    </h3>
-                </div>
-            </div>
-
-            <div class="row mt-3">
-
-                <div class="col-xl-3 col-md-4 col-sm-6 col-12">
-                    <div class="feedback-item">
-                        <h2 class="customer">
-                            <img src="../assets/images/woman-avatar.png" alt="avatar">
-                            <span class="mx-1">سلمى عمر</span>
-                        </h2>
-                        <div class="feedback-body dynamic-text-align">
-                            <i class="fa fa-quote-left"></i>
-                            <div class="quote">
-                                <p>
-                                    فى الحقيقة دكتور نور أفضل منتج ساعدنى للعناية ببشرتى دا غير سعره المناسب مقارنةً
-                                    بالمنتجات التانية
-                                </p>
-                            </div>
-                            <div class="date-footer dynamic-text-align-reverse">
-                                <i class="fa fa-calendar mx-1"></i>
-                                <span>18</span> <span>أغسطس</span> , <span>2020</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-md-4 col-sm-6 col-12">
-                    <div class="feedback-item">
-                        <h2 class="customer">
-                            <img src="../assets/images/woman-avatar.png" alt="avatar">
-                            <span class="mx-1">الشيماء خالد</span>
-                        </h2>
-                        <div class="feedback-body dynamic-text-align">
-                            <i class="fa fa-quote-left"></i>
-                            <div class="quote">
-                                <p>
-                                    فاعلية ممتازة ملوش اثار جانبية وبستخدمه بسهوله ، شكرا دكتور نور.
-                                </p>
-                            </div>
-                            <div class="date-footer dynamic-text-align-reverse">
-                                <i class="fa fa-calendar mx-1"></i>
-                                <span>12</span> <span>يناير</span> , <span>2021</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-md-4 col-sm-6 col-12">
-                    <div class="feedback-item">
-                        <h2 class="customer">
-                            <img src="../assets/images/woman-avatar.png" alt="avatar">
-                            <span class="mx-1">مونيكا مدحت</span>
-                        </h2>
-                        <div class="feedback-body dynamic-text-align">
-                            <i class="fa fa-quote-left"></i>
-                            <div class="quote">
-                                <p>
-                                    بعد تجربة منتجات كتير استخدمتها ، لم أجد مقارنة بينهم وبين دكتور نور من جميع النواحي
-                                    . منتج ممتاز فعلا . أنصح به جميع المستخدمين
-                                </p>
-                            </div>
-                            <div class="date-footer dynamic-text-align-reverse">
-                                <i class="fa fa-calendar mx-1"></i>
-                                <span>25</span> <span>فبراير</span> , <span>2021</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-3 col-md-4 col-sm-6 col-12">
-                    <div class="feedback-item">
-                        <h2 class="customer">
-                            <img src="../assets/images/woman-avatar.png" alt="avatar">
-                            <span class="mx-1">أميرة عبود</span>
-                        </h2>
-                        <div class="feedback-body dynamic-text-align">
-                            <i class="fa fa-quote-left"></i>
-                            <div class="quote">
-                                <p>
-                                    أنا مكنتش مصدقة فى الأول النتائج المذهلة دى ، لما صاحبتى قالتلى عليه أول مره افتكرت
-                                    انه منتج زى أى منتج فى السوق ، بس قولت أجرب وفعلا لما جربت حسيت انى كنت هندم كتير لو
-                                    مكنتش اشتريت دكتور نور.
-                                </p>
-                            </div>
-                            <div class="date-footer dynamic-text-align-reverse">
-                                <i class="fa fa-calendar mx-1"></i>
-                                <span>23</span> <span>مارس</span> , <span>2021</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
 
     <!-- Footer Section -->
 
