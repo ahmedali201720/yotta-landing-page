@@ -253,6 +253,132 @@
     transform: scale(1.02);
 }
 
+/* Statistics Section */
+
+.courses-section {
+    background-image: linear-gradient(to right bottom, #25ddebcc, rgba(240, 93, 112, 0.781)), url('../../assets/images/Health-care.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    border-top: 1px solid #fff;
+}
+
+.courses-header {
+    background-color: var(--blueColor);
+    border-radius: 50px;
+    padding: 1rem 0.625rem;
+    width: 230px;
+    margin: auto;
+    color: #fff;
+}
+
+.course-card {
+    position: relative;
+    border-radius: 7px;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+}
+
+.card-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transition: all 0.6s;
+}
+
+.card-side-back {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.course-card:hover {
+    cursor: pointer;
+}
+
+.course-card:hover .card-side-front {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.course-card:hover .card-side-back {
+    transform: rotateY(0);
+    -webkit-transform: rotateY(0);
+}
+
+.course-card .image {
+    position: relative;
+    height: 132px;
+    overflow: hidden;
+}
+
+.course-card .image img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.course-card .image .lecturer {
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+    font-size: 14px;
+    background-color: var(--mainColor);
+    padding: 0.225rem 0.825rem;
+    color: #ffffff;
+    font-weight: 600;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.course-card .image .bookmark-btn {
+    position: absolute;
+    top: 7%;
+    right: 7%;
+    font-size: 16px;
+    color: red;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.course-card .image .bookmark-btn:hover {
+    cursor: pointer;
+}
+
+.course-card .body {
+    background-color: #ffffff;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.course-card .body .title {
+    display: block;
+    margin-bottom: 1rem;
+    height: 48px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #000000;
+    overflow: hidden;
+}
+
+.course-card .body .price {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.course-card .body .old-price {
+    text-decoration: line-through;
+    color: red;
+}
+
+.course-card .body .current-price {
+    color: var(--blueColor);
+    font-weight: 700;
+}
+
 /* Product components */
 
 .product-components {

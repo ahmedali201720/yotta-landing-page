@@ -39,6 +39,9 @@
     #popUpModal .modal-content .logo img {
         width: 90px;
     }
+    #stats .join-button {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 320px) {

@@ -1,66 +1,35 @@
 $(document).ready(function () {
 
-    $(".intro-section-carousel").owlCarousel({
+    $(".courses-carousel").owlCarousel({
         margin: 20,
         loop: true,
         mouseDrag: true,
         touchDrag: true,
         autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        nav: false,
-        rtl: true,
-        items: 1
-    });
-
-    $(".usage-items-carousel").owlCarousel({
-        margin: 20,
-        center: true,
-        loop: true,
-        mouseDrag: true,
-        touchDrag: true,
-        autoplay: true,
-        autoHeight: true,
         autoplayTimeout: 4000,
         autoplayHoverPause: true,
         nav: false,
         rtl: true,
         responsive: {
             0: {
-                items: 1,
+                items: 1
             },
             400: {
-                items: 1.5,
+                items: 1.2
             },
             576: {
-                items: 2,
+                items: 1.8
             },
             768: {
-                items: 3
+                items: 2.5
             },
             992: {
-                items: 4
+                items: 2.75
+            },
+            1200: {
+                items: 3.25
             }
         }
     });
-
 });
 
-$(".intro-img-carousel").owlCarousel({
-    margin: 0,
-    center: true,
-    loop: true,
-    mouseDrag: true,
-    touchDrag: true,
-    autoplay: true,
-    autoHeight: true,
-    autoplayTimeout: 2000,
-    autoplayHoverPause: true,
-    nav: false,
-    rtl: true,
-    responsive: {
-        0: {
-            items: 1,
-        }
-    }
-});
