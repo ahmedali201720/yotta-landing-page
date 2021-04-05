@@ -437,22 +437,19 @@
 /* Modal Styles */
 
 #popUpModal {
-    background-image: url(../../assets/images/Health-care.jpg);
     border-radius: 10px;
     z-index: 100000;
 }
 
-#popUpModal .modal-header {
-    background-color: var(--blueColor);
-}
-
 #popUpModal .modal-title {
     font-weight: 700;
-    color: #fff;
+    color: #000;
 }
 
 #popUpModal .modal-content {
+    background-image: linear-gradient(to right bottom, #0e0d0dd0, #0e0d0dd0), url('../../assets/images/ul.jpg');
     border-radius: 10px;
+    box-shadow: 0 0 5px #fff;
 }
 
 #popUpModal .modal-content .close {
@@ -464,8 +461,61 @@
     outline: none !important;
 }
 
-#popUpModal form input {
-    outline: none;
+#popUpModal .modal-content .header {
+    color: #fff;
+    background-color: var(--blueColor);
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 250px;
+    margin: auto;
+}
+
+#popUpModal .modal-content .text {
+    color: #fff;
+    font-weight: 600;
+}
+
+#popUpModal .modal-content .accreddit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1rem;
+    border: 2px solid var(--mainOrange);
+}
+
+#popUpModal .modal-content .accreddit img {
+    display: block;
+    width: 80px;
+    height: auto;
+    margin: auto;
+}
+
+#popUpModal .modal-content .logo img {
+    display: block;
+    width: 150px;
+    height: auto;
+    margin: auto;
+}
+
+#popUpModal .apply-btn, #popUpModal .more-btn {
+    text-decoration: none !important;
+    border: none !important;
+    border-radius: 7px;
+    color: #ffffff;
+    width: 80%;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#popUpModal .apply-btn {
+    background-color: rgb(255, 0, 0);
+}
+
+#popUpModal .more-btn {
+    background-color: var(--mainColor);
 }
 
 /* ***************************************************************************************** */

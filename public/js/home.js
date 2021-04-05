@@ -1,7 +1,5 @@
-var aboutSectionTopOffset = $("#aboutSection").offset().top;
-var componentSectionTopOffset = $("#productComponent").offset().top;
+$(document).ready(() => {
 
-$(window).scroll(() => {
-    animateOnView($(".fade-section *"), aboutSectionTopOffset);
-    animateOnView($("#productComponent *"), componentSectionTopOffset);
-});
+    setTimeout(openModal, 2000);
+
+})

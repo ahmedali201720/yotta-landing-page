@@ -84,3 +84,7 @@ function animateOnView(animatableElment, offset) {
         $(animatableElment).addClass("fade-in-class");
     }
 }
+
+function openModal() {
+    $("#popUpModal").modal('toggle');
+}
