@@ -72,7 +72,7 @@
 
 .contact-form {
     position: fixed;
-    top: 10%;
+    top: 13%;
     left: 8%;
     background-color: #fff;
     border-radius: 7px;
@@ -136,6 +136,121 @@
 
 .about-section .feature-text-item::marker {
     content: '';
+}
+
+/* Statistics Section */
+
+#stats {
+    background-image: linear-gradient(to right bottom, #fa8475cc, rgba(206, 242, 253, 0.781)), url('../../assets/images/ul.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.squareItem {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.squareItem:hover {
+    cursor: pointer;
+}
+
+.squareInnerContainer {
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 3px solid var(--blueColor);
+    border-top: none;
+    border-radius: 7px;
+}
+
+.squareInnerContainer:before, .squareInnerContainer:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 30%;
+    border-bottom: 3px solid var(--blueColor);
+    border-radius: 7px;
+}
+
+.squareInnerContainer:before {
+    right: 0px;
+}
+
+.squareInnerContainer:after {
+    left: 0px
+}
+
+.squareContent h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #e74c3c;
+}
+
+.squareContent h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.squareIcon {
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    width: 40%;
+    height: 60px;
+    font-size: 45px;
+    margin-left: -20%;
+    color: #444;
+    transition: transform 1.2s;
+}
+
+.squareItem:hover .squareIcon {
+    cursor: pointer;
+    color: var(--mainOrange);
+}
+
+.stats-header {
+    background-color: var(--blueColor);
+    border-radius: 50px;
+    padding: 1rem 0.625rem;
+    width: 230px;
+    margin: auto;
+    color: #fff;
+}
+
+.stats-header img {
+    width: 60px;
+    height: auto;
+    transition: all 1.5s;
+}
+
+.stats-header img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+#stats .join-button {
+    display: block;
+    width: 50%;
+    margin: auto;
+    border: none;
+    outline: none !important;
+    background-color: rgb(253, 63, 29);
+    color: #fff;
+    padding: 1rem 0.825rem;
+    font-weight: 600;
+    border-radius: 7px;
+    transition: all 0.2s;
+}
+
+#stats .join-button:hover {
+    cursor: pointer;
+    background-color: rgb(253, 75, 44);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 /* Product components */
