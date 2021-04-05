@@ -73,36 +73,62 @@ body {
     animation: fadeIn 1s ease-in;
 }
 
-/* ************************************************************************************************************** */
-
-/* Forex Ticker Styles */
-
-#news-ticker-container {
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
+@media only screen and (max-width: 576px) {
+    .text-xs-center {
+        text-align: center !important;
+    }
+    .dynamic-text-xs-align:lang(ar) {
+        text-align: right !important;
+    }
+    .dynamic-text-xs-align:lang(en) {
+        text-align: left !important;
+    }
 }
 
-.news-ticker-item .item-header {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    text-align: center;
-    padding: 0.325rem 0;
+@media only screen and (min-width: 576px) {
+    .text-sm-center {
+        text-align: center !important;
+    }
+    .dynamic-text-sm-align:lang(ar) {
+        text-align: right !important;
+    }
+    .dynamic-text-sm-align:lang(en) {
+        text-align: left !important;
+    }
 }
 
-.news-ticker-item a:hover .item-header {
-    color: rgb(231, 207, 207) !important;
+@media only screen and (min-width: 768px) {
+    .text-md-center {
+        text-align: center !important;
+    }
+    .dynamic-text-md-align:lang(ar) {
+        text-align: right !important;
+    }
+    .dynamic-text-md-align:lang(en) {
+        text-align: left !important;
+    }
 }
 
-/* ********************************************************************************** */
-
-#news-ticker-container #newsTicker {
-    background-image: linear-gradient(to right bottom, #034168c7, #034168cc), url('../../assets/images/background2.jpg');
-    perspective: 1000px;
-    perspective-origin: 50% 50%;
-    animation: animateBackgroundImage 100s linear infinite;
+@media only screen and (min-width: 992px) {
+    .text-lg-center {
+        text-align: center !important;
+    }
+    .dynamic-text-lg-align:lang(ar) {
+        text-align: right !important;
+    }
+    .dynamic-text-lg-align:lang(en) {
+        text-align: left !important;
+    }
 }
 
-.collapse-header {
-    background-color: transparent;
+@media only screen and (min-width: 1200px) {
+    .text-xl-center {
+        text-align: center !important;
+    }
+    .dynamic-text-xl-align:lang(ar) {
+        text-align: right !important;
+    }
+    .dynamic-text-xl-align:lang(en) {
+        text-align: left !important;
+    }
 }

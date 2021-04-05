@@ -488,10 +488,7 @@
 /* ********************************************************************************************************* */
 
 #footer {
-    background-image: linear-gradient(to right bottom, #00515ac2, #124e55b4), url('../../assets/images/takheertabea.png');
-    perspective: 1000px;
-    perspective-origin: 50% 50%;
-    animation: animateBackgroundImage 300s linear infinite;
+    background-color: #000000;
     color: #fff;
     height: max-content !important;
 }
@@ -509,14 +506,15 @@
     fill: rgb(230, 221, 221);
 }
 
-.footer-content {
-    padding: 3.5rem 2rem;
-}
-
 .footer-section-label {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 0.925rem;
+}
+
+.footer-text .header img {
+    width: 130px;
+    height: auto;
 }
 
 .footer-section-links a {
@@ -585,10 +583,8 @@
 }
 
 .footer-logo-container a img {
-    width: 150px;
+    width: 200px;
     height: auto;
-    border-radius: 50%;
-    border: 2px solid #fff;
     transition: transform 1.5s;
 }
 
