@@ -342,6 +342,7 @@
     font-size: 14px;
     font-weight: 700;
     -webkit-transform: rotateZ(-40deg);
+    transform: rotateZ(-40deg);
 }
 
 .pricing-section .pricing-item .price-wrapper .price-text {
@@ -455,6 +456,7 @@
 #popUpModal .modal-content .close {
     margin: 0;
     color: rgb(255, 255, 255) !important;
+    outline: none !important;
 }
 
 #popUpModal .modal-content .close button {

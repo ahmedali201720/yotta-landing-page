@@ -11,13 +11,60 @@
         height: 200px;
         border-radius: 50% !important;
     }
+    #popUpModal .modal-content .accreddit {
+        width: 70px;
+        height: 70px;
+        padding: 0;
+    }
+    #popUpModal .modal-content .accreddit img {
+        width: 60px;
+    }
+    #popUpModal .modal-content .logo img {
+        width: 85px;
+    }
 }
 
-@media only screen and (max-width: 414px) {}
+@media only screen and (max-width: 414px) {
+    #popUpModal .modal-content .accreddit {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+    }
+    #popUpModal .modal-content .accreddit img {
+        width: 70px;
+    }
+    #popUpModal .modal-content .logo img {
+        width: 90px;
+    }
+}
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+    #popUpModal .modal-content .accreddit {
+        width: 60px;
+        height: 60px;
+        padding: 0;
+    }
+    #popUpModal .modal-content .accreddit img {
+        width: 40px;
+    }
+    #popUpModal .modal-content .logo img {
+        width: 90px;
+    }
+}
 
-@media only screen and (max-width: 280px) {}
+@media only screen and (max-width: 280px) {
+    #popUpModal .modal-content .accreddit {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+    }
+    #popUpModal .modal-content .accreddit img {
+        width: 40px;
+    }
+    #popUpModal .modal-content .logo img {
+        width: 60px;
+    }
+}
 
 /* ********************************************************************************************************* */
 

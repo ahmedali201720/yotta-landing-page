@@ -1,5 +1,5 @@
 $(document).ready(() => {
 
-    setTimeout(openModal, 2000);
+    setTimeout(openModal, 1000);
 
 })
