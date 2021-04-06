@@ -959,3 +959,11 @@
 .banners-carousel .owl-stage-outer, .banners-carousel .owl-stage, .banners-carousel .owl-item {
     height: 100%;
 }
+
+/* sectoion logo container */
+
+.section-logo-container img {
+    width: 100%;
+    height: auto;
+    animation: yRotate 5s infinite alternate;
+}
