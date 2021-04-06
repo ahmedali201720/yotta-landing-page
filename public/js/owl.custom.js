@@ -38,5 +38,33 @@ $(document).ready(function () {
             }
         }
     });
+
+    $(".banners-carousel").owlCarousel({
+        margin: 20,
+        loop: true,
+        mouseDrag: true,
+        touchDrag: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        nav: false,
+        navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        rtl: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            576: {
+                items: 1.5
+            },
+            768: {
+                items: 2
+            },
+            992: {
+                items: 1
+            }
+        }
+    });
+
 });
 

@@ -34,4 +34,20 @@ $(document).ready(() => {
 
     // ***************************************************************************************************
 
+    $("#minimizeContactForm").click(function () {
+
+        $("#contactForm").fadeOut(500);
+        $("#contactFormOpener").fadeIn(200);
+        $(".contact-form-controlled").fadeIn(500);
+
+    });
+
+    $("#contactFormOpener").click(function () {
+
+        $("#contactFormOpener").fadeOut(200);
+        $(".contact-form-controlled").fadeOut(500);
+        $("#contactForm").fadeIn(500);
+
+    });
+
 })

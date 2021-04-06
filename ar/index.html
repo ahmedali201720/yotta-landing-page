@@ -47,6 +47,9 @@
 
         <div class="header p-3">
             <p class="mb-0">تواصل معنا</p>
+            <button class="minimize-form-btn" id="minimizeContactForm">
+                <i class="fa fa-minus-circle"></i>
+            </button>
         </div>
 
         <form class="dynamic-text-align px-sm-4 px-3">
@@ -83,6 +86,11 @@
 
     </div>
 
+    <button class="contact-form-show" id="contactFormOpener">
+        <i class="fa fa-comment-alt"></i>
+        <span class="mx-2">تواصل معنا</span>
+    </button>
+
     <section class="intro-section px-xl-5 px-lg-4 px-3 py-sm-5 py-lg-4 py-md-2 py-4" id="introSection">
 
         <div class="container-fluid py-4">
@@ -107,9 +115,36 @@
 
                 </div>
 
-                <div class="col-lg-4 mb-3">
+                <div class="col-lg-4 mb-3 contact-form-controlled">
 
+                    <div class="wrapper">
 
+                        <div class="banner-card px-xl-5 px-3 py-xl-5 py-4">
+
+                            <div class="body">
+
+                                <div class="header py-3 mb-4">
+                                    <p class="mb-0 text-center">منحة دراسية</p>
+                                </div>
+
+                                <div class="text px-xl-5 px-lg-4 px-3 my-3">
+                                    <p class="mb-0 text-center">
+                                        احصل على منحة دراسية لدراسة ادارة المستشفيات من UK بخصم 70%
+                                    </p>
+                                </div>
+
+                                <div class="modal-action-container my-5">
+                                    <a href="#" class="d-block mx-auto mb-2 apply-btn">ارسال طلب إالتحاق</a>
+                                    <a href="https://wa.me/201117698650" target="_blank"
+                                        class="d-block mx-auto more-btn">اعرف
+                                        المزيد</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -159,6 +194,52 @@
                                 </li>
                             </ul>
                         </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 mb-3 contact-form-controlled">
+
+                    <div class="contact-us-form dynamic-text-align" id="contactUsForm">
+
+                        <div class="header p-3">
+                            <p class="mb-0">أرسل رسالة</p>
+                        </div>
+
+                        <form class="dynamic-text-align px-sm-4 px-3">
+
+                            <div class="modal-body pt-4">
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="shipEmail" aria-describedby="emailHelp"
+                                        placeholder="الإسم">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="shipEmail" aria-describedby="emailHelp"
+                                        placeholder="الايميل">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="shipPhone" placeholder="رقم الهاتف">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="shipAddress"
+                                        placeholder="موضوع الرسالة">
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="msgDetails" name="details" class="w-100 px-2" rows="3"
+                                        placeholder="تفاصيل الرسالة" style="border-top: 1px solid grey;"></textarea>
+                                    </textarea>
+                                </div>
+
+                            </div>
+
+                            <div
+                                class="modal-footer select-plan-button border-top-0 pt-0 pb-4 mb-3 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-success">ارســـــال</button>
+                            </div>
+
+                        </form>
 
                     </div>
 
@@ -602,55 +683,66 @@
 
                 </div>
 
-                <div class="col-lg-4 d-lg-none d-block">
+                <div class="col-lg-4 contact-form-controlled">
 
-                    <div class="row pt-2 pb-4">
-                        <div class="col-12 text-center">
-                            <h4 class="courses-header">
-                                <span>اتصل بنــــا</span>
-                            </h4>
-                        </div>
-                    </div>
+                    <div class="wrapper h-100">
 
-                    <div class="contact-us-form dynamic-text-align" id="contactUsForm">
+                        <div class="banners-carousel owl-carousel h-100">
 
-                        <div class="header p-3">
-                            <p class="mb-0">أرسل رسالة</p>
-                        </div>
+                            <div class="category-card">
 
-                        <form class="dynamic-text-align px-sm-4 px-3">
-
-                            <div class="modal-body pt-4">
-
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="shipEmail" aria-describedby="emailHelp"
-                                        placeholder="الإسم">
+                                <div class="image">
+                                    <img src="../assets/images/pharma.jpg" alt="pharma">
                                 </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="shipEmail" aria-describedby="emailHelp"
-                                        placeholder="الايميل">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="shipPhone" placeholder="رقم الهاتف">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="shipAddress"
-                                        placeholder="موضوع الرسالة">
-                                </div>
-                                <div class="form-group">
-                                    <textarea id="msgDetails" name="details" class="w-100 px-2" rows="3"
-                                        placeholder="تفاصيل الرسالة" style="border-top: 1px solid grey;"></textarea>
-                                    </textarea>
+
+                                <div class="body p-3">
+                                    <a href="https://yottamedicalschool.com/category/pharmaceutical-marketing"
+                                        class="title h-100 p-3">Pharmaceutical</a>
                                 </div>
 
                             </div>
 
-                            <div
-                                class="modal-footer select-plan-button border-top-0 pt-0 pb-4 mb-3 d-flex justify-content-center">
-                                <button type="submit" class="btn btn-success">ارســـــال</button>
+                            <div class="category-card">
+
+                                <div class="image">
+                                    <img src="../assets/images/vet.jpg" alt="vet">
+                                </div>
+
+                                <div class="body p-3">
+                                    <a href="https://yottamedicalschool.com/category/veterinary"
+                                        class="title p-3 h-100">Veterinary</a>
+                                </div>
+
                             </div>
 
-                        </form>
+                            <div class="category-card">
+
+                                <div class="image">
+                                    <img src="../assets/images/science.jpg" alt="science">
+                                </div>
+
+                                <div class="body p-3">
+                                    <a href="https://yottamedicalschool.com/category/science"
+                                        class="title p-3 h-100">Science</a>
+                                </div>
+
+                            </div>
+
+                            <div class="category-card">
+
+                                <div class="image">
+                                    <img src="../assets/images/Health-care.jpg" alt="care">
+                                </div>
+
+                                <div class="body p-3">
+                                    <a href="https://yottamedicalschool.com/category/Healthcare-Quality-Management"
+                                        class="title p-3 h-100">Healthcare Quality Management
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 

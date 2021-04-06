@@ -28,6 +28,9 @@
     .contact-form {
         display: none;
     }
+    .contact-form-controlled {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 414px) {
@@ -95,6 +98,9 @@
     .contact-form {
         display: none;
     }
+    .contact-form-controlled {
+        display: block;
+    }
 }
 
 @media only screen and (min-width: 768px) {}
@@ -104,6 +110,9 @@
         display: block;
         left: 5%;
         width: 280px;
+    }
+    .contact-form-controlled {
+        display: none;
     }
 }
 
