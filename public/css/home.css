@@ -98,6 +98,25 @@
     font-size: 18px;
 }
 
+/* Contact us form */
+
+.contact-us-form {
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 5px var(--mainColor);
+    width: 100%;
+    overflow-y: auto;
+}
+
+.contact-us-form .header {
+    background-color: var(--mainColor);
+    color: #fff;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
 /* about section */
 
 .about-section {
