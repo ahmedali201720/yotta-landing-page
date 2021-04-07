@@ -773,7 +773,7 @@
     right: 10%;
 }
 
-.select-plan-button button {
+.send-message-btn button {
     position: relative;
     border: none;
     outline: none !important;
@@ -787,12 +787,12 @@
     transition: all 0.4s;
 }
 
-.select-plan-button button:hover {
+.send-message-btn button:hover {
     cursor: pointer;
     background-color: #E30425;
 }
 
-.select-plan-button button::after {
+.send-message-btn button::after {
     position: absolute;
     content: '';
     top: 0;
@@ -805,7 +805,7 @@
     transition: all 0.4s;
 }
 
-.select-plan-button button:hover::after {
+.send-message-btn button:hover::after {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     opacity: 0;

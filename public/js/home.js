@@ -39,6 +39,8 @@ $(document).ready(() => {
         $("#contactForm").fadeOut(500);
         $("#contactFormOpener").fadeIn(200);
         $(".contact-form-controlled").fadeIn(500);
+        formValid = false;
+        $("#contactForm form").trigger('reset');
 
     });
 
@@ -47,6 +49,8 @@ $(document).ready(() => {
         $("#contactFormOpener").fadeOut(200);
         $(".contact-form-controlled").fadeOut(500);
         $("#contactForm").fadeIn(500);
+        formValid = false;
+        $("#contactForm form").trigger('reset');
 
     });
 
@@ -102,6 +106,16 @@ $(document).ready(() => {
                 formValid = true;
             }
         }
+    });
+
+    $("#sendBtn").click(function (event) {
+        if (!formValid)
+            event.preventDefault();
+    });
+
+    $("#sendContactUs").click(function (event) {
+        if (!formValid)
+            event.preventDefault();
     });
 
 })
