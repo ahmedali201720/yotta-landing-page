@@ -45,7 +45,7 @@
 
 .intro-section {
     position: relative;
-    background-image: linear-gradient(to right bottom, #00000088, #00000088), url('../../assets/images/covermodal.jpg.crdownload');
+    background-image: linear-gradient(to right bottom, #00000088, #00000088), url('../../assets/images/ul.jpg');
     background-size: cover;
     border-bottom: 1px solid #fff;
 }
@@ -218,6 +218,16 @@
     content: '';
 }
 
+.about-section .certification img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    box-shadow: 0 0 5px #fff;
+    border-radius: 8px;
+}
+
 /* Statistics Section */
 
 #stats {
@@ -230,6 +240,7 @@
     margin-top: 30px;
     position: relative;
     width: 100%;
+    height: 100%;
 }
 
 .squareItem:hover {
@@ -238,6 +249,7 @@
 
 .squareInnerContainer {
     position: relative;
+    height: 100%;
     padding: 50px 15px 35px;
     text-align: center;
     border: 3px solid var(--blueColor);
@@ -295,10 +307,12 @@
 .stats-header {
     background-color: var(--blueColor);
     border-radius: 50px;
-    padding: 1rem 0.625rem;
-    width: 230px;
-    margin: auto;
+    padding: 1rem 1.5rem;
+    width: fit-content;
     color: #fff;
+    text-align: center;
+    margin: auto;
+    border: 2px solid #ffffff;
 }
 
 .stats-header img {
@@ -345,10 +359,11 @@
 .courses-header {
     background-color: var(--blueColor);
     border-radius: 50px;
-    padding: 1rem 0.625rem;
-    width: 230px;
+    padding: 1rem 1.5rem;
+    width: fit-content;
     margin: auto;
     color: #fff;
+    border: 2px solid #ffffff;
 }
 
 .course-card {
@@ -436,7 +451,7 @@
 }
 
 .course-card .body {
-    background-color: #ffffff;
+    background-color: var(--blueColor);
     border-bottom-right-radius: 7px;
     border-bottom-left-radius: 7px;
 }
@@ -444,22 +459,18 @@
 .course-card .body .title {
     display: block;
     margin-bottom: 1rem;
-    height: 48px;
     font-size: 14px;
+    height: 40px;
     line-height: 16px;
+    padding: 6px;
     font-weight: 600;
-    color: #000000;
+    color: #ffffff;
     overflow: hidden;
 }
 
 .course-card .body .price {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-}
-
-.course-card .body .old-price {
-    text-decoration: line-through;
-    color: red;
 }
 
 .course-card .body .current-price {
@@ -468,7 +479,7 @@
 }
 
 .course-card .back-body {
-    background-image: linear-gradient(to right bottom, #f5eeeed7, #e1f5fad8), url('../../assets/images/covermodal.jpg.crdownload');
+    background-image: linear-gradient(to right bottom, #f5eeeed7, #e1f5fad8), url('../../assets/images/covermodal.jpg');
     background-size: cover;
     border-radius: 7px;
     height: 252px;
@@ -509,7 +520,7 @@
 .card-side-back .back-desc {
     font-size: 14px;
     line-height: 16px;
-    height: 80px;
+    height: 96px;
     overflow: hidden;
 }
 
@@ -862,6 +873,8 @@
     border-radius: 50%;
     padding: 1rem;
     border: 2px solid var(--mainOrange);
+    width: 120px;
+    height: 120px;
 }
 
 #popUpModal .modal-content .accreddit img {
@@ -900,7 +913,7 @@
 
 .banner-card {
     position: relative;
-    background-image: linear-gradient(to right bottom, #00000088, #00000088), url('../../assets/images/covermodal.jpg.crdownload');
+    background-image: linear-gradient(to right bottom, #00000088, #00000088), url('../../assets/images/ul.jpg');
     background-size: cover;
     box-shadow: 0 0 5px #fff;
     border-radius: 10px;
