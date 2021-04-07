@@ -6,6 +6,10 @@
     --blueColor: #065f95;
     --whiteColor: #F0F0EF;
     --mainColor: #009193;
+    --dangerColor: #ff4444;
+    --successColor: #00C851;
+    --warningColor: #ffbb33;
+    --infoColor: #33b5e5;
 }
 
 /* Set the direction right to left */
@@ -54,6 +58,22 @@ body {
 
 .text-smoke {
     color: whitesmoke;
+}
+
+.border-success {
+    border-color: var(--successColor) !important;
+}
+
+.border-danger {
+    border-color: var(--dangerColor) !important;
+}
+
+.border-warning {
+    border-color: var(--warningColor) !important;
+}
+
+.border-info {
+    border-color: var(--infoColor) !important;
 }
 
 .bg-main {
