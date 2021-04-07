@@ -115,7 +115,7 @@ function validateEmail(email) {
 }
 
 function validatePhone(phone) {
-    var regex = /^[0-9]{11}/;
+    var regex = /^[0-9]{11}$/;
     if (!regex.test(phone)) {
         return false;
     }

@@ -54,7 +54,7 @@ $(document).ready(() => {
 
     var formValid = false;
 
-    $("#contactForm input").keyup(function () {
+    $("#contactForm input").focusout(function () {
 
         var inputID = $(this).attr('id');
         if (inputID == 'contactName' || inputID == 'contactTopic' || inputID == 'contactDetails') {
@@ -90,7 +90,7 @@ $(document).ready(() => {
 
     });
 
-    $("#contactForm textarea").keyup(function () {
+    $("#contactForm textarea").focusout(function () {
         var inputID = $(this).attr('id');
         if (inputID == 'contactDetails') {
             if (!validateText($(this).val(), 5, 255)) {
