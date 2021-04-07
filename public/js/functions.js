@@ -92,3 +92,44 @@ function openModal() {
 function closeCTA() {
     $("#fixedHeader").fadeOut(700);
 }
+
+//*******************************************************************************************
+
+function validateText(text, min, max) {
+    if (text.trim() && text.length >= min && text.length <= max) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+function validateEmail(email) {
+    var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if (!regex.test(email)) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+function validatePhone(phone) {
+    var regex = /^[0-9]{11}/;
+    if (!regex.test(phone)) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+function validAction(input, alert) {
+    alert.fadeOut(100);
+    input.addClass("border-success");
+}
+
+function invalidAction(input, alert) {
+    alert.fadeIn(100);
+    input.removeClass("border-success");
+}

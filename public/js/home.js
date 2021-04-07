@@ -50,4 +50,58 @@ $(document).ready(() => {
 
     });
 
+    // *********************************************************************************************
+
+    var formValid = false;
+
+    $("#contactForm input").keyup(function () {
+
+        var inputID = $(this).attr('id');
+        if (inputID == 'contactName' || inputID == 'contactTopic' || inputID == 'contactDetails') {
+            if (!validateText($(this).val(), 5, 255)) {
+                invalidAction($(this), $(this).parent().find(".alert"));
+                formValid = false;
+            }
+            else {
+                validAction($(this), $(this).parent().find(".alert"));
+                formValid = true;
+            }
+        }
+        else if (inputID == "contactEmail") {
+            if (!validateEmail($(this).val())) {
+                invalidAction($(this), $(this).parent().find(".alert"));
+                formValid = false;
+            }
+            else {
+                validAction($(this), $(this).parent().find(".alert"));
+                formValid = true;
+            }
+        }
+        else if (inputID == "contactPhone") {
+            if (!validatePhone($(this).val())) {
+                invalidAction($(this), $(this).parent().find(".alert"));
+                formValid = false;
+            }
+            else {
+                validAction($(this), $(this).parent().find(".alert"));
+                formValid = true;
+            }
+        }
+
+    });
+
+    $("#contactForm textarea").keyup(function () {
+        var inputID = $(this).attr('id');
+        if (inputID == 'contactDetails') {
+            if (!validateText($(this).val(), 5, 255)) {
+                invalidAction($(this), $(this).parent().find(".alert"));
+                formValid = false;
+            }
+            else {
+                validAction($(this), $(this).parent().find(".alert"));
+                formValid = true;
+            }
+        }
+    });
+
 })
