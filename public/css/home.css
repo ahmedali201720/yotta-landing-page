@@ -407,12 +407,13 @@
 
 .course-card .image {
     position: relative;
-    height: 132px;
+    height: 170px;
     overflow: hidden;
 }
 
 .course-card .image img {
     width: 100%;
+    min-height: 100%;
     height: auto;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
