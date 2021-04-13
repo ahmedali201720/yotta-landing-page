@@ -45,7 +45,7 @@
 
 .intro-section {
     position: relative;
-    background-image: linear-gradient(to right bottom, #00000088, #00000088), url('../../assets/images/ul.jpg');
+    background-image: linear-gradient(to right bottom, #00000088, #00000088);
     background-size: cover;
     border-bottom: 1px solid #fff;
 }
@@ -175,7 +175,7 @@
 .about-section {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    background-image: linear-gradient(to right bottom, #797973ab, #888881a9), url('../../assets/images/Health-care.jpg');
+    background-image: linear-gradient(to right bottom, #797973ab, #888881a9);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -231,7 +231,7 @@
 /* Statistics Section */
 
 #stats {
-    background-image: linear-gradient(to right bottom, #fa8475cc, rgba(206, 242, 253, 0.781)), url('../../assets/images/ul.jpg');
+    background-image: linear-gradient(to right bottom, #fa8475cc, rgba(206, 242, 253, 0.781));
     background-size: cover;
     background-attachment: fixed;
 }
@@ -350,7 +350,7 @@
 /* Statistics Section */
 
 .courses-section {
-    background-image: linear-gradient(to right bottom, #25ddebcc, rgba(240, 93, 112, 0.781)), url('../../assets/images/Health-care.jpg');
+    background-image: linear-gradient(to right bottom, #25ddebcc, rgba(240, 93, 112, 0.781));
     background-size: cover;
     background-attachment: fixed;
     border-top: 1px solid #fff;
@@ -528,7 +528,7 @@
 /* Product components */
 
 .product-components {
-    background-image: linear-gradient(to right bottom, #205f66c0, #205f66c0), url('../../assets/images/garrab-benafsak.jpeg');
+    background-image: linear-gradient(to right bottom, #205f66c0, #205f66c0);
     perspective: 1000px;
     perspective-origin: 50% 50%;
     animation: animateBackgroundImage 100s linear infinite;
@@ -574,7 +574,7 @@
 .features-section {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    background-image: linear-gradient(to right bottom, #e0e0da8c, #e0e0da8c), url('../../assets/images/strong1.jpg');
+    background-image: linear-gradient(to right bottom, #e0e0da8c, #e0e0da8c);
     perspective: 1000px;
     perspective-origin: 50% 50%;
     animation: animateBackgroundImage 100s linear infinite;
@@ -626,7 +626,7 @@
 .product-usage {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    background-image: linear-gradient(to right bottom, #7e7e7c8c, #7e7e7c8c), url('../../assets/images/1200-1200/13.jpg');
+    background-image: linear-gradient(to right bottom, #7e7e7c8c, #7e7e7c8c);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -682,7 +682,7 @@
 /* Product usage section */
 
 .pricing-section {
-    background-image: linear-gradient(to right bottom, #2784948f, #2784948f), url('../../assets/images/1200-1200/47.jpg');
+    background-image: linear-gradient(to right bottom, #2784948f, #2784948f);
     perspective: 1000px;
     perspective-origin: 50% 50%;
     animation: animateBackgroundImage 100s linear infinite;
