@@ -48,10 +48,8 @@
 }
 
 .intro-section .head-label {
-    background-color: var(--mainColor);
+    color: var(--mainColor);
     padding: 0.825rem;
-    border-radius: 50px;
-    border: 2px solid #fff;
 }
 
 .intro-section .video-container {
@@ -257,6 +255,8 @@
     background-color: #e74c3c;
     padding: 0.325rem 0;
     border-radius: 50px;
+    max-width: 190px;
+    margin: auto;
 }
 
 .squareContent h3 {
@@ -975,5 +975,6 @@
 .section-logo-container img {
     width: 100%;
     height: auto;
+    max-width: 300px;
     animation: yRotate 5s infinite alternate;
 }
