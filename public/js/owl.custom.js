@@ -42,6 +42,7 @@ $(document).ready(function () {
     $(".banners-carousel").owlCarousel({
         margin: 20,
         loop: true,
+        center: true,
         mouseDrag: true,
         touchDrag: true,
         autoplay: true,
@@ -64,6 +65,11 @@ $(document).ready(function () {
                 items: 1
             }
         }
+    });
+
+    $(".owl-item").click(function () {
+        const carousel = $('.courses-carousel').data('owl.carousel');
+        carousel.to(carousel.relative($(this).index()));
     });
 
 });
