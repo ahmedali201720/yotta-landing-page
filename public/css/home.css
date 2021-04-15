@@ -214,7 +214,7 @@
 /* Statistics Section */
 
 #stats {
-    background-image: linear-gradient(to right bottom, #a19f9f, rgba(206, 242, 253, 0.781));
+    background-image: linear-gradient(to right bottom, #b5ccda, #dfeffa);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -226,7 +226,7 @@
     background: linear-gradient(-45deg, #065f95, #009193, #0877bd, #094a72);
     background-size: 400% 400%;
     animation: animateGradient 5s ease infinite;
-    box-shadow: 0 0 10px #c01b09;
+    box-shadow: 0 0 10px #065f95;
 }
 
 .squareItem:hover {
@@ -270,7 +270,6 @@
 
 .squareItem:hover .squareIcon {
     cursor: pointer;
-    color: var(--mainOrange);
 }
 
 .stats-header {
