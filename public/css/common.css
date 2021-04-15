@@ -105,6 +105,14 @@ body {
     text-decoration: none;
 }
 
+.special-word {
+    background: linear-gradient(-45deg, #065f95, #3cacf1, #14415e, #1172ad);
+    background-size: 400% 400%;
+    padding: 0 1rem;
+    border-radius: 50px;
+    animation: animateGradient 5s ease infinite;
+}
+
 @media only screen and (max-width: 576px) {
     .text-xs-center {
         text-align: center !important;

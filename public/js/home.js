@@ -118,4 +118,21 @@ $(document).ready(() => {
             event.preventDefault();
     });
 
+    $("#joinBtn").click(function () {
+
+        const contactForm = $("#contactForm");
+
+        if (contactForm.css('display') == 'none') {
+            $("#contactFormOpener").fadeOut(200);
+            $(".contact-form-controlled").fadeOut(500);
+            contactForm.fadeIn(500);
+            $("#contactForm form").trigger('reset');
+            formValid = false;
+        }
+        else {
+            contactForm.effect("shake", { direction: "up", times: 4, distance: 14 }, 1000);
+        }
+
+    });
+
 })

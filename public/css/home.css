@@ -193,22 +193,13 @@
     padding: 1rem 0.625rem;
 }
 
-.about-section .feature-text-item {
-    color: #000000;
-    font-weight: 600;
-    padding: 0 1rem;
-    text-indent: -1.425rem;
-    margin-bottom: 10px;
-}
-
-.about-section .feature-text-item::before {
-    font-family: 'FontAwesome';
-    content: '\f00c';
-    margin-left: 0.325rem;
-}
-
-.about-section .feature-text-item::marker {
-    content: '';
+.about-section .feature-item {
+    background-color: var(--mainColor);
+    color: #ffffff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-radius: 7px;
+    height: 100%;
 }
 
 .about-section .certification img {
@@ -229,10 +220,13 @@
 }
 
 .squareItem {
-    margin-top: 30px;
-    position: relative;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #065f95, #009193, #0877bd, #094a72);
+    background-size: 400% 400%;
+    animation: animateGradient 5s ease infinite;
+    box-shadow: 0 0 10px #c01b09;
 }
 
 .squareItem:hover {
@@ -252,27 +246,25 @@
     margin-bottom: 10px;
     font-weight: 400;
     color: #ffffff;
-    background-color: #e74c3c;
     padding: 0.325rem 0;
     border-radius: 50px;
     max-width: 190px;
     margin: auto;
+    background: linear-gradient(-45deg, #fdbab3, #f77769, #c01b09, #b67069);
+    background-size: 400% 400%;
+    animation: animateGradient 10s ease infinite;
+    border: 1px solid #ffffff;
 }
 
 .squareContent h3 {
     font-size: 18px;
     font-weight: 700;
+    color: #ffffff;
 }
 
 .squareIcon {
-    position: absolute;
-    left: 50%;
-    top: -30px;
-    width: 40%;
-    height: 60px;
     font-size: 45px;
-    margin-left: -20%;
-    color: #444;
+    color: #ffffff;
     transition: transform 1.2s;
 }
 
