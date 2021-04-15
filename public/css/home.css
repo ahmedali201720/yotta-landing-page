@@ -469,7 +469,7 @@
 }
 
 .course-card .back-body {
-    background-image: linear-gradient(to right bottom, #f5eeeed7, #e1f5fad8), url('../../assets/images/covermodal.jpg');
+    background-image: linear-gradient(to right bottom, #f5eeeed7, #e1f5fad8);
     background-size: cover;
     border-radius: 7px;
     height: 252px;
