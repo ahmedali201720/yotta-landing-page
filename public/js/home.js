@@ -15,13 +15,6 @@ $(document).ready(() => {
 
     $(window).scroll(() => {
 
-        if ($(window).scrollTop() === 0) {
-            $("#go-up").hide(200);
-        }
-        else {
-            $("#go-up").show(200);
-        }
-
         if (!countUpDone && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
             $(".counter").each(function () {
                 var counterElement = $(this);
@@ -120,17 +113,25 @@ $(document).ready(() => {
 
     $("#joinBtn").click(function () {
 
-        const contactForm = $("#contactForm");
-
-        if (contactForm.css('display') == 'none') {
-            $("#contactFormOpener").fadeOut(200);
-            $(".contact-form-controlled").fadeOut(500);
-            contactForm.fadeIn(500);
-            $("#contactForm form").trigger('reset');
-            formValid = false;
+        if (getWindowSize() >= 992) {
+            const contactForm = $("#contactForm");
+            if (contactForm.css('display') == 'none') {
+                $("#contactFormOpener").fadeOut(200);
+                $(".contact-form-controlled").fadeOut(500);
+                contactForm.fadeIn(500);
+                $("#contactForm form").trigger('reset');
+                formValid = false;
+            }
+            else {
+                contactForm.effect("shake", { direction: "up", times: 4, distance: 14 }, 1000);
+            }
         }
+
         else {
-            contactForm.effect("shake", { direction: "up", times: 4, distance: 14 }, 1000);
+            const contactForm = $(".contact-us-form").first();
+            window.scrollTo(0, (contactForm.offset().top) - 80)
+            contactForm.effect("shake", { direction: "up", times: 5, distance: 14 }, 1200);
+
         }
 
     });

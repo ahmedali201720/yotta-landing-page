@@ -34,6 +34,12 @@
     .contact-form-show {
         display: none;
     }
+    .section-header {
+        font-size: 30px;
+    }
+    .stats-header {
+        font-size: 26px;
+    }
 }
 
 @media only screen and (max-width: 414px) {
@@ -51,6 +57,12 @@
     #stats .join-button {
         width: 100%;
     }
+    .section-header {
+        font-size: 26px;
+    }
+    .stats-header {
+        font-size: 22px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -67,6 +79,12 @@
     }
     #stats .join-button {
         width: 100%;
+    }
+    .section-header {
+        font-size: 24px;
+    }
+    .stats-header {
+        font-size: 20px;
     }
 }
 
@@ -96,6 +114,12 @@
         color: #fff;
         text-decoration: underline;
     }
+    .section-header {
+        font-size: 20px;
+    }
+    .stats-header {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (max-width: 280px) {
@@ -109,6 +133,12 @@
     }
     #popUpModal .modal-content .logo img {
         width: 60px;
+    }
+    .section-header {
+        font-size: 16px;
+    }
+    .stats-header {
+        font-size: 14px;
     }
 }
 
