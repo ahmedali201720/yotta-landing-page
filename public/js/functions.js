@@ -133,3 +133,7 @@ function invalidAction(input, alert) {
     alert.fadeIn(100);
     input.removeClass("border-success");
 }
+
+function focusFirstElement(element) {
+    element.focus();
+}
