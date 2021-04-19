@@ -49,39 +49,55 @@ $(document).ready(() => {
 
     // *********************************************************************************************
 
-    var formValid = false;
+    var formValid = {
+        'name': false,
+        'email': false,
+        'phone': false,
+        'topic': false,
+        'message': false
+    };
 
     $("#contactForm input").focusout(function () {
 
         var inputID = $(this).attr('id');
-        if (inputID == 'contactName' || inputID == 'contactTopic' || inputID == 'contactDetails') {
+        if (inputID == 'contactName') {
             if (!validateText($(this).val(), 5, 255)) {
                 invalidAction($(this), $(this).parent().find(".alert"));
-                formValid = false;
+                formValid.name = false;
             }
             else {
                 validAction($(this), $(this).parent().find(".alert"));
-                formValid = true;
+                formValid.name = true;
             }
         }
         else if (inputID == "contactEmail") {
             if (!validateEmail($(this).val())) {
                 invalidAction($(this), $(this).parent().find(".alert"));
-                formValid = false;
+                formValid.email = false;
             }
             else {
                 validAction($(this), $(this).parent().find(".alert"));
-                formValid = true;
+                formValid.email = true;
             }
         }
         else if (inputID == "contactPhone") {
             if (!validatePhone($(this).val())) {
                 invalidAction($(this), $(this).parent().find(".alert"));
-                formValid = false;
+                formValid.phone = false;
             }
             else {
                 validAction($(this), $(this).parent().find(".alert"));
-                formValid = true;
+                formValid.phone = true;
+            }
+        }
+        else if (inputID == 'contactTopic') {
+            if (!validateText($(this).val(), 5, 255)) {
+                invalidAction($(this), $(this).parent().find(".alert"));
+                formValid.topic = false;
+            }
+            else {
+                validAction($(this), $(this).parent().find(".alert"));
+                formValid.topic = true;
             }
         }
 
@@ -92,22 +108,22 @@ $(document).ready(() => {
         if (inputID == 'contactDetails') {
             if (!validateText($(this).val(), 5, 255)) {
                 invalidAction($(this), $(this).parent().find(".alert"));
-                formValid = false;
+                formValid.message = false;
             }
             else {
                 validAction($(this), $(this).parent().find(".alert"));
-                formValid = true;
+                formValid.message = true;
             }
         }
     });
 
     $("#sendBtn").click(function (event) {
-        if (!formValid)
+        if (!(formValid.name && formValid.email && formValid.phone && formValid.topic && formValid.message))
             event.preventDefault();
     });
 
     $("#sendContactUs").click(function (event) {
-        if (!formValid)
+        if (!(formValid.name && formValid.email && formValid.phone && formValid.topic && formValid.message))
             event.preventDefault();
     });
 
@@ -141,7 +157,11 @@ $(document).ready(() => {
                 $(".contact-form-controlled").fadeOut(500);
                 contactForm.fadeIn(500);
                 $("#contactForm form").trigger('reset');
-                formValid = false;
+                formValid.name = false;
+                formValid.email = false;
+                formValid.phone = false;
+                formValid.topic = false;
+                formValid.message = false;
             }
             else {
                 contactForm.effect("shake", { direction: "up", times: shockNum, distance: 14 }, time);
