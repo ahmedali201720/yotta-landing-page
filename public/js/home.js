@@ -32,7 +32,11 @@ $(document).ready(() => {
         $("#contactForm").fadeOut(500);
         $("#contactFormOpener").fadeIn(200);
         $(".contact-form-controlled").fadeIn(500);
-        formValid = false;
+        formValid.name = false;
+        formValid.email = false;
+        formValid.phone = false;
+        formValid.topic = false;
+        formValid.message = false;
         $("#contactForm form").trigger('reset');
 
     });
@@ -42,7 +46,11 @@ $(document).ready(() => {
         $("#contactFormOpener").fadeOut(200);
         $(".contact-form-controlled").fadeOut(500);
         $("#contactForm").fadeIn(500);
-        formValid = false;
+        formValid.name = false;
+        formValid.email = false;
+        formValid.phone = false;
+        formValid.topic = false;
+        formValid.message = false;
         $("#contactForm form").trigger('reset');
 
     });
@@ -118,13 +126,15 @@ $(document).ready(() => {
     });
 
     $("#sendBtn").click(function (event) {
-        if (!(formValid.name && formValid.email && formValid.phone && formValid.topic && formValid.message))
+        if (!(formValid.name && formValid.email && formValid.phone && formValid.topic && formValid.message)) {
             event.preventDefault();
+        }
     });
 
     $("#sendContactUs").click(function (event) {
-        if (!(formValid.name && formValid.email && formValid.phone && formValid.topic && formValid.message))
+        if (!(formValid.name && formValid.email && formValid.phone && formValid.topic && formValid.message)) {
             event.preventDefault();
+        }
     });
 
     $("#joinBtn").click(function () {
